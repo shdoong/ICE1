@@ -1,0 +1,82 @@
+img {
+	width:25%;
+	margin: 30px;
+	border: 7px solid rgba(0, 0, 0, 1);
+}
+
+/*HOW TO MAKE IT STAY A BOX WHILE ITS HOVERING*/
+.hover:hover{
+	animation: hover-border 1s;
+}
+
+@keyframes hover-border{
+	100%{
+		border-radius:25%;
+	}
+}
+
+.bar{
+	background-color: rgba(0, 0, 0, 0.15);
+	width:100%;
+	height:55px;
+	position:absolute;
+	bottom:25%;
+}
+
+/*How to animate so it only moves after click?*/
+.square{ 
+	background-color:blue;
+	width:20px;
+	height:20px;
+	position:absolute;
+	bottom:30%;
+	right:98.5%;
+
+}
+
+@keyframes moves-box{
+	25%{
+		transform:translateX(0px) rotateZ(120deg);
+	}	
+	50%{
+		transform:translateX(1300px) rotateZ(180deg);
+	}
+	
+	100%{
+		transform:translateX(0px) rotateZ(360deg);
+	}
+}
+
+img:focus{
+	outline-color:#6495ED;
+	outline-style: solid;
+}
+
+.focus:focus{
+	filter: grayscale(100%);
+}
+
+.active:focus{
+	filter: opacity(60%);
+}
+.square:active{
+	background-color:red;
+	outline-color:#6495ED;
+	outline-style:solid;
+/*	animation:rotates-box 5s infinite;
+*/}
+
+.square:focus{
+	animation:moves-box 10s infinite;
+}
+
+
+/*How to get it to spin and move after click*/
+@keyframes spinit{
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
