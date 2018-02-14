@@ -1,0 +1,124 @@
+@media only screen and (min-width:650px) {
+	
+	.top-nav ul{
+		text-align:center;
+	}
+	.top-nav ul li{
+		display:inline-block;
+		margin:0;
+		background-color: black;
+	}
+
+	.img{
+		display:block;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.75rem;	
+	}
+
+	img.resp-img-1{
+		display:inline-block;
+		width : 46%;
+		height: 25%;
+		margin-bottom:10px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:left;
+	}
+
+	img.resp-img-2{
+		display:inline-block;
+		width : 47%;
+		height: 25%;
+		margin-bottom:10px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:right;
+	}
+
+@media only screen and (min-width:1000px){
+	.top-nav ul{
+		list-style-type: none;
+		padding: 0;
+		background-color: black; 
+		display: inline-block;
+		text-align: right;
+		padding-top:10px;
+		float:right;
+	}
+
+	.logo{
+		background-color: #211D24; 
+		margin: 0;
+		text-align: left;
+		padding: .25em .75em;
+		display:inline-block;
+	}
+
+	img.resp-img-3{
+		display:inline-block;
+		width : 49%;
+		height: 49%;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:left;
+	}
+
+	img.resp-img-4{
+		display:inline-block;
+		width : 49%;
+		height: 49%;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:right;
+	}
+
+	img.resp-img-1{
+		display:inline-block;
+		width : 24%;
+		height: 49%;
+		clear: both;
+		margin-right:10px;
+		margin-top: 5px;
+		margin-bottom:5px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:left;
+	}
+
+	img.resp-img-2{
+		display:inline-block;
+		width : 24%;
+		height: 49%;
+		margin-top: 5px;
+		margin-bottom:5px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:left;
+	}
+
+	img.resp-img-5{
+		display:inline-block;
+		width : 49%;
+		height: 49%;
+		margin-top:5px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:right;
+	}
+
+	img.resp-img-6{
+		display:inline-block;
+		clear:both;
+		width : 49%;
+		height: 49%;
+		margin-bottom:5px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:left;
+	}
+
+	img.resp-img-7{
+		display:inline-block;
+		width : 49%;
+		height: 49%;
+		margin-bottom:5px;
+	  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+	  	float:right;
+	}
+
+
+}
