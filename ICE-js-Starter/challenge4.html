@@ -13,6 +13,26 @@
     <script type="text/javascript">
     function checkForm(){
       // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+      var fullname = document.getElementById("fullname").value;
+      var address = document.getElementById("streetaddr").value;
+      var nameerrormsg = document.getElementById("nameerrormsg");
+      var addrerrormsg = document.getElementById("addrerrormsg");
+
+      nameerrormsg.style.display = "none";
+      addrerrormsg.style.display = "none";
+
+      var isValid = true;
+      if (!fullname){
+        // console.log("Full name was not provided");
+        nameerrormsg.style.display = "block";
+        isValid = false;
+      }
+      if (!address){
+        // console.log("Address was not provided");
+        addrerrormsg.style.display =  "block";
+        isValid = false;
+      }
+      return isValid;
     }  
     </script>
 </head>

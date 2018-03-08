@@ -39,30 +39,49 @@
   <script type="text/javascript">
   // I used Two functions here.  Starter idea at: 
   // https://codepen.io/ColleenEMc/pen/XmZzWw
+  function upDate(previewPic){
+ /* In this function you should 
+    1) change the url for the background image of the div with the id = "image" 
+    to the source file of the preview image
+    
+    2) Change the text  of the div with the id = "image" 
+    to the alt text of the preview image 
+    */
+    var src_url = "url(" + previewPic.src + ")"
+    var altt = previewPic.alt;
+    var body = document.getElementById("image");
+    body.style.backgroundImage = src_url;
+    body.textContent = altt;
+  }
+
+  function unDo(){
+     /* In this function you should 
+    1) Update the url for the background image of the div with the id = "image" 
+    back to the orginal-image.  You can use the css code to see what that original URL was
+    
+    2) Change the text  of the div with the id = "image" 
+    back to the original text.  You can use the html code to see what that original text was
+    */
+   
+    var body = document.getElementById("image");
+    body.style.backgroundImage = "";
+    body.textContent = "Hover over an image to display here."; 
+  }
   </script>
 </head>
 
 <body>
   <h1>Challenge 5</h1>
-    <div id = "image">
-      Hover over an image below.
-    </div>
 
-    <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-    <img class = "preview" 
-      alt = "Styling with a Bandana" 
-      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-      >
-
-
-    <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->  
-    <img class = "preview" 
-      alt = "With My Boy" 
-      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+  <div id = "image">
+    Hover over an image below to display here.
+  </div>
   
-    <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-    <img class = "preview" tabindex = "1" 
-      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-      alt = "Young Puppy";>
+  <img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
+  
+  <img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
+  
+  <img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
+  
 </body>
 </html>
