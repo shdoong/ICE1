@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+      <title>Susan Doong</title>
+
+      <link rel="stylesheet" type="text/css" href="css/ice-style.css">
+       <script type = "text/javascript">
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+   </script>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="logo" height="80" width="80">
+    
+    <div id = "nav_bar">
+      <nav>
+<!--         <ul>
+ -->      <section><a href="index.html">Home</a></section>
+          <section><a href="about.html">About Me</a></section>
+<!--           <li><a href="projects.html">Projects</a></li>
+ -->        <div class="dropdown">
+            <section><button onmouseover="myFunction()" class="dropbtn">Projects</button></section>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="projects.html">Overview</a>
+                <a href="#">Austin Tenant's Council</a>
+                <a href="#">Powerley</a>
+                <a href="#">Google Community Leaders</a>
+                <a href="#">Coursework Projects</a>
+              </div>
+            </div>
+          <section><a class="current-page" href="gallery.html">Gallery</a></section>
+          <section><a href="contact.html">Contact</a></section>
+        <!-- </ul> -->
+      </nav>
+    </div>
+
+  <footer>Susan Doong 2018 &copy;</footer>
+
+  </body>
+
+</html>

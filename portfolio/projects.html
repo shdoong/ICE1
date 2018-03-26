@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>Projects</title>
+
+      <link rel="stylesheet" type="text/css" href="css/projects.css">
+       <script type = "text/javascript">
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+   </script>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="logo" height="80" width="80">
+    
+    <div id = "nav_bar">
+      <nav>
+<!--         <ul>
+ -->      <section><a href="index.html">Home</a></section>
+          <section><a href="about.html">About Me</a></section>
+<!--           <li><a href="projects.html">Projects</a></li>
+ -->        <div class="dropdown">
+            <section><button class="current-page" onmouseover="myFunction()" class="dropbtn">Projects</button></section>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="current-page" href="projects.html">Overview</a>
+                <a href="#">Austin Tenant's Council</a>
+                <a href="#">Powerley</a>
+                <a href="#">Google Community Leaders</a>
+                <a href="#">Coursework Projects</a>
+              </div>
+            </div>
+          <section><a href="gallery.html">Gallery</a></section>
+          <section><a href="contact.html">Contact</a></section>
+        <!-- </ul> -->
+      </nav>
+    </div>
+
+    <ul class="flex-container">
+      <li class="flex-item b "></li>
+      <li class="flex-item c"></li>
+      <li class="flex-item a">
+          <a id = "austin_link" href = "http://housing-rights.org/index.html">Need to make background image clickable link</a>
+      </li>
+      <li class="flex-item b "></li>
+      <li class="flex-item c"></li>
+     
+    </ul>
+  <footer>Susan Doong 2018 &copy;</footer>
+
+  </body>
+
+</html>

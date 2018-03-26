@@ -1,0 +1,247 @@
+*{
+	background-color:#9F9F9F;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+footer{
+  margin-top: 2px;
+  background:black;
+  color:white;
+  text-align:center;
+  width: 100%;
+}
+
+.current-page{
+    font-weight: bold;
+    background-color:#686868;
+  }
+
+
+/*Mobile View*/
+@media only screen and (max-width:649px) {
+
+  nav{
+    list-style:none;
+    margin: 2px 0px 2px -4px;
+    width: 100%;
+    background-color: black;
+    padding:0.25em;
+    text-align:center;
+  }
+
+  nav section{
+    display:inline;
+    padding: .2em 2em;
+  }
+
+  nav a{
+    color:black;
+    background-color:#9F9F9F;
+    display:inline-block;
+    text-decoration: none;
+    margin: 10px 0px;
+  }
+
+/* Dropdown Button */
+  .dropbtn {
+      background-color: #9F9F9F;
+      color: black;
+      font-family: Times;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #686868;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .show {
+    display:block;
+  }
+
+  .flex-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .flex-item {
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    box-sizing:border-box;
+    font-family: Palatino, Times;
+  }
+
+  .a {
+    background-image:url(../images/profile.jpg);
+    background-size: 479px 480px;
+    background-repeat: no-repeat;
+    height: 100%;
+
+  }
+
+  .b{
+    display:none;
+  }
+
+  .c{
+    display:none;
+  }
+}
+
+/*Full View*/
+
+@media only screen and (min-width:650px) {
+  nav{
+    list-style:none;
+    margin: 2px 0px 2px -4px;
+    width: 100%;
+    background-color: black;
+    padding:0.25em;
+    text-align:center;
+  }
+
+  nav section{
+    display:inline;
+    padding: .2em 2em;
+  }
+
+  nav a{
+    color:black;
+    background-color:#9F9F9F;
+    display:inline-block;
+    text-decoration: none;
+    margin: 10px 0px;
+  }
+
+/* Dropdown Button */
+  .dropbtn {
+      background-color: #9F9F9F;
+      color: black;
+      font-family: Times;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #686868;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .show {
+    display:block;
+  }
+
+  .flex-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .flex-item {
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 1.5em;
+    box-sizing:border-box;
+    font-family: Palatino, Times;
+  }
+
+  .a {
+    background-image:url(../images/profile.jpg);
+    background-size: 479px 480px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 35%;
+  }
+
+  .b{
+    background-image:url(../images/ireland.jpg);
+    font-weight: bold;
+    background-size: 850px 277px;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 65%;
+  }
+
+  .c{
+    background-image:url(../images/beijing.jpg);
+    background-repeat: no-repeat;
+    font-size: 1em;
+    height: 50%;
+    width: 65%;
+  }
+
+}
