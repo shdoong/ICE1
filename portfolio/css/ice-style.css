@@ -49,6 +49,10 @@ footer{
   }
 
 /* Dropdown Button */
+  button{
+      padding:0.215em 1.6em 0.18em 1.6em;
+  }
+  
   .dropbtn {
       background-color: #9F9F9F;
       color: black;
@@ -156,6 +160,10 @@ footer{
   }
 
 /* Dropdown Button */
+  button{
+      padding:0.215em 1.6em 0.18em 1.6em;
+  }
+
   .dropbtn {
       background-color: #9F9F9F;
       color: black;
