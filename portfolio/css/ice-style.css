@@ -228,7 +228,7 @@ footer{
   }
 
   .b{
-    background-image:url(../images/ireland.jpg);
+    background-image:url(../images/ireland.JPG);
     font-weight: bold;
     background-size: 850px 277px;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ footer{
   }
 
   .c{
-    background-image:url(../images/beijing.jpg);
+    background-image:url(../images/beijing.JPG);
     background-repeat: no-repeat;
     font-size: 1em;
     height: 50%;
