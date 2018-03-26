@@ -170,7 +170,7 @@ footer{
   button{
       padding:0.215em 1.6em 0.18em 1.6em;
   }
-  
+
   .dropbtn {
       background-color: #9F9F9F;
       color: black;
@@ -238,7 +238,7 @@ footer{
   }
 
   #austin_link{
-    background-image:url(../images/austin.jpg);
+    background-image:url(../images/austin.JPG);
     display:block;
     height:92%;
     width:100%;
