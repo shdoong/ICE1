@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
       <title>Susan Doong</title>
 
-      <link rel="stylesheet" type="text/css" href="css/ice-style.css">
+      <link rel="stylesheet" type="text/css" href="css/contact.css">
        <script type = "text/javascript">
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
@@ -35,11 +37,8 @@
     
     <div id = "nav_bar">
       <nav>
-<!--         <ul>
- -->      <section><a href="index.html">Home</a></section>
-          <section><a href="about.html">About Me</a></section>
-<!--           <li><a href="projects.html">Projects</a></li>
- -->        <div class="dropdown">
+      <section><a href="index.html">Home</a></section>
+          <div class="dropdown">
             <button onmouseover="myFunction()" class="dropbtn">Projects</button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="projects.html">Overview</a>
@@ -49,11 +48,38 @@
                 <a href="#">Coursework Projects</a>
               </div>
             </div>
-          <section><a href="gallery.html">Gallery</a></section>
+          <section><a href="gallery.html">Art Gallery</a></section>
           <section><a class="current-page" href="contact.html">Contact</a></section>
-        <!-- </ul> -->
       </nav>
     </div>
+
+
+    <div class="flex-container">
+      <div class="flex-item b" align="center">
+        <div id = "message">
+
+          <h2>Contact Me</h2>
+            Feel free to leave me a message here, or connect with me on <a href = "https://www.linkedin.com/in/susan-doong18/"> LinkedIn!</a>
+
+            <div class="placeholder-100pct">&nbsp;</div>
+
+          </div>
+        <form action="https://formspree.io/shdoong@umich.edu" method="POST">
+          Name:
+            <input type="text" name="name" placeholder="Your name..">
+          <br><br>
+          Email:
+            <input type="text" name="email" placeholder="Your email..">
+          <br><br>
+          Message:<br>
+            <textarea name="message" placeholder="Leave a message!" style="height:170px"></textarea>
+          <br>
+          <input type="submit" value="Submit" name = "Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+    </div>
+  <div class="placeholder-100pct">&nbsp;</div>
 
   <footer>Susan Doong 2018 &copy;</footer>
 

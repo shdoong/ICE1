@@ -25,10 +25,6 @@ footer{
     background-color:#686868;
   }
 
-header{
-  background-color:#9F9F9F;
-}
-
 .placeholder-100pct{
   background:transparent;
 }
@@ -217,48 +213,77 @@ header{
     display:block;
   }
 
-  .flex-container{
+.flex-container{
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 70vh;
+    height: 82vh;
+    justify-content: center;
+
   }
 
   .flex-item {
     color: black;
     border: 2px solid black;
     padding: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     box-sizing:border-box;
     font-family: Palatino, Times;
+    background-image:url(../images/contact.jpg);
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: 80em 40em;
+    font-weight:bold;
   }
 
-  .a {
-    background-image:url(../images/profile.jpg);
-    background-size: 479px 480px;
+  .b {
+    background-color:#DADADA;
     background-repeat: no-repeat;
     height: 100%;
-    width: 35%;
+
   }
 
-  .b{
-    background-image:url(../images/ireland.JPG);
-    font-weight: bold;
-    background-size: 850px 277px;
-    background-repeat: no-repeat;
-    height: 50%;
-    width: 65%;
+  form{
+    background: rgba(255,255,255,0.6);    
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    border-radius: 2%;
+    border-style:bold;
+    padding: 2%;
+    width: 20%;
+    border: 1px solid black;
+    margin-top:1em;
+
   }
 
-  .c{
-    background-image:url(../images/beijing.JPG);
-    background-repeat: no-repeat;
-    font-size: 1em;
-    height: 50%;
-    width: 65%;
+input[type="text"], textarea, select {
+  background-color : white; 
+  border: 1px solid #ccc; /* Gray border */
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+a{
+    background:transparent;
   }
+
+h2{
+  background:transparent;
+}
+
+#message{
+  background: rgba(255,255,255,0.5);  
+  border-radius: 2%;
+  -moz-border-radius: 2%;
+  -webkit-border-radius: 2%;
+  width:40%;
+}
+
 
 }

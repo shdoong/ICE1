@@ -1,5 +1,5 @@
 *{
-	background-color:#9F9F9F;
+  background-color:#9F9F9F;
 }
 
 img{
@@ -18,6 +18,7 @@ footer{
   position:fixed;
   bottom:0;
   margin-left:-0.5em;
+
 }
 
 .current-page{
@@ -25,13 +26,29 @@ footer{
     background-color:#686868;
   }
 
-header{
-  background-color:#9F9F9F;
+div.gallery {
+    border: 1px solid #ccc;
 }
 
-.placeholder-100pct{
-  background:transparent;
+div.gallery:hover {
+    border: 1px solid #777;
 }
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin-top:0.25em;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /*Mobile View*/
 @media only screen and (max-width:649px) {
 
@@ -61,7 +78,7 @@ header{
   button{
       padding:0.215em 1.6em 0.18em 1.6em;
   }
-  
+
   .dropbtn {
       background-color: #9F9F9F;
       color: black;
@@ -106,46 +123,13 @@ header{
     display:block;
   }
 
-  .flex-container{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 70vh;
-  }
-
-  .flex-item {
-    color: black;
-    border: 2px solid black;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 1.5em;
-    box-sizing:border-box;
-    font-family: Palatino, Times;
-  }
-
-  .a {
-    background-image:url(../images/profile.jpg);
-    background-size: 479px 480px;
-    background-repeat: no-repeat;
-    height: 100%;
-
-  }
-
-  .b{
-    display:none;
-  }
-
-  .c{
-    display:none;
-  }
 }
+
 
 /*Full View*/
 
 @media only screen and (min-width:650px) {
+
   nav{
     list-style:none;
     margin: 2px 0px 2px -4px;
@@ -169,6 +153,7 @@ header{
   }
 
 /* Dropdown Button */
+
   button{
       padding:0.215em 1.6em 0.18em 1.6em;
   }
@@ -217,48 +202,11 @@ header{
     display:block;
   }
 
-  .flex-container{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 70vh;
-  }
+.responsive {
+    padding: 2px 6px;
+    float: left;
+    width: 24.99999%;
+}
 
-  .flex-item {
-    color: black;
-    border: 2px solid black;
-    padding: 5px;
-    font-size: 1.5em;
-    box-sizing:border-box;
-    font-family: Palatino, Times;
-  }
-
-  .a {
-    background-image:url(../images/profile.jpg);
-    background-size: 479px 480px;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 35%;
-  }
-
-  .b{
-    background-image:url(../images/ireland.JPG);
-    font-weight: bold;
-    background-size: 850px 277px;
-    background-repeat: no-repeat;
-    height: 50%;
-    width: 65%;
-  }
-
-  .c{
-    background-image:url(../images/beijing.JPG);
-    background-repeat: no-repeat;
-    font-size: 1em;
-    height: 50%;
-    width: 65%;
-  }
 
 }
