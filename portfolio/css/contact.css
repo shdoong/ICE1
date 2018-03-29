@@ -29,6 +29,7 @@ footer{
   background:transparent;
 }
 
+
 /*Full View*/
 
 @media only screen and (min-width:800px) {
@@ -59,6 +60,12 @@ footer{
       padding:0.215em 1.6em 0.18em 1.6em;
   }
 
+  a:hover, a:focus, section:hover, section:focus, button:hover, button:focus{
+    background-color: #3CB371;
+    color: #DDDDDA;
+    font-weight: bold;
+  }
+
   .dropbtn {
       background-color: #9F9F9F;
       color: black;
@@ -69,7 +76,7 @@ footer{
   }
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
-      background-color: #686868;
+      background-color: #3CB371;
   }
 
   /* The container <div> - needed to position the dropdown content */
@@ -178,7 +185,7 @@ footer{
 
 /*Mobile View*/
 @media only screen and (max-width:800px) {
-    nav{
+  nav{
     list-style:none;
     margin: 2px 0px 2px -4px;
     width: 100%;
@@ -188,21 +195,29 @@ footer{
   }
 
   nav section{
-    display:inline;
-    padding: .2em 2em;
+    display:block;
+    padding: 0em 2em;
+    background-color:black;
   }
 
   nav a{
     color:black;
     background-color:#9F9F9F;
-    display:inline-block;
+    display:block;
     text-decoration: none;
     margin: 10px 0px;
+    padding:0.7em;
   }
 
 /* Dropdown Button */
   button{
-      padding:0.215em 1.6em 0.18em 1.6em;
+      padding:.8em 4.5em;
+  }
+
+ a:hover, a:focus, button:hover, button:focus{
+    background-color: #3CB371;
+    color: #DDDDDA;
+    font-weight: bold;
   }
 
   .dropbtn {
@@ -215,8 +230,9 @@ footer{
   }
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
-      background-color: #686868;
+      background-color: #3CB371;
   }
+
 
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
