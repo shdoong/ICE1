@@ -118,6 +118,55 @@ footer{
     display: block;
 }
 
+/* entire container, keeps perspective */
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  border-radius: 10%;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+  background-color:transparent;
+  margin:2em;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+  border-radius: 10%;
+  border: 3px solid white;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  display:flex;
+  align-items:center;
+  background: #eaeaed;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+ul{
+  background:transparent;
+}
+
+li{
+  background:transparent;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav {
@@ -170,6 +219,29 @@ footer{
     width: 100%;
     text-align: left;
   }
+
+  .card-container {
+    cursor: pointer;
+    height: 150px;
+    border-radius: 10%;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+    background-color:transparent;
+    margin:2em;
+    display:block;
+    position:absolute;
+  }
+
+  .card {
+    height: 100%;
+    position: absolute;
+    border-radius: 10%;
+    border: 3px solid white;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
 }
 
 .home-page{
@@ -182,52 +254,4 @@ footer{
   display:flex;
   align-items:center;
   justify-content: center;
-}
-/* entire container, keeps perspective */
-.card-container {
-  cursor: pointer;
-  height: 150px;
-  border-radius: 10%;
-  perspective: 600;
-  position: relative;
-  width: 150px;
-  background-color:transparent;
-  margin:2em;
-}
-
-.card {
-  height: 100%;
-  position: absolute;
-  border-radius: 10%;
-  border: 3px solid white;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  border-radius: 6px;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-}
-.card .back {
-  display:flex;
-  align-items:center;
-  background: #eaeaed;
-  color: black;
-  transform: rotateY(180deg);
-}
-
-ul{
-  background:transparent;
-}
-
-li{
-  background:transparent;
 }
