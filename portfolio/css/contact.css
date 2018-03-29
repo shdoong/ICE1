@@ -211,7 +211,8 @@ footer{
 
 /* Dropdown Button */
   button{
-      padding:.8em 4.5em;
+    display:block;
+    padding:.75em 20.2em;
   }
 
  a:hover, a:focus, button:hover, button:focus{
