@@ -29,8 +29,32 @@ footer{
   background:transparent;
 }
 
+.home-page{
+  height: 26.9em;
+  width: 100%;
+  background-image:url(../images/home.jpg);
+  background-size: 80em 40em;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
 
-/*Full View*/
+h2{
+  background:transparent;
+  margin:0;
+  font-family: Palatino, Times;
+}
+
+p{
+  background:transparent;
+}
+
+#content{
+  background:transparent;
+  text-align:center;
+  font-family: Palatino, Times;
+}
+
 
 @media only screen and (min-width:800px) {
   nav{
@@ -109,36 +133,88 @@ footer{
   .show {
     display:block;
   }
-
-  .home-page{
-    height: 26.9em;
-    width: 100%;
-    background-image:url(../images/home.jpg);
-    background-size: 80em 40em;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-  }
-
-  h2{
-    background:transparent;
-    margin:0;
-    font-family: Palatino, Times;
-  }
-
-  p{
-    background:transparent;
-  }
-
-  #content{
-    background:transparent;
-    text-align:center;
-    font-family: Palatino, Times;
-  }
-
 }
 
 /*Mobile View*/
 @media only screen and (max-width:800px) {
+  nav{
+    list-style:none;
+    margin: 2px 0px 2px -4px;
+    width: 100%;
+    background-color: black;
+    padding:0.25em;
+    text-align:center;
+  }
 
+  nav section{
+    display:block;
+    padding: 0em 2em;
+    background-color:black;
+  }
+
+  nav a{
+    color:black;
+    background-color:#9F9F9F;
+    display:block;
+    text-decoration: none;
+    margin: 10px 0px;
+    padding:0.7em;
+  }
+
+/* Dropdown Button */
+  button{
+    display:block;
+    padding:.75em 20.2em;
+  }
+
+ a:hover, a:focus, button:hover, button:focus{
+    background-color: #3CB371;
+    color: #DDDDDA;
+    font-weight: bold;
+  }
+
+  .dropbtn {
+      background-color: #9F9F9F;
+      color: black;
+      font-family: Times;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #3CB371;
+  }
+
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  .show {
+    display:block;
+  }
 }
