@@ -9,51 +9,41 @@
 
       <link rel="stylesheet" type="text/css" href="css/contact.css">
        <script type = "text/javascript">
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-    // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
+       function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
           }
-        }
+       }
+      
    </script>
   </head>
 
   <body>
     <img src="images/logo.png" alt="logo" height="80" width="80">
     
-    <div id = "nav_bar">
-      <nav>
-        <section><a href="index.html">Home</a></section>
-        <section><a  href="about.html">About</a></section>
-
-            <div class="dropdown">
-              <button onmouseover="myFunction()" class="dropbtn">Projects</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="projects.html">Overview</a>
-                  <a href="#">Austin Tenant's Council</a>
-                  <a href="#">Powerley</a>
-                  <a href="#">Google Community Leaders</a>
-                  <a href="#">Coursework Projects</a>
-                </div>
-              </div>
-          <section><a href="gallery.html">Art Gallery</a></section>
-          <section><a class="current-page" href="contact.html">Contact</a></section>
-      </nav>
+      <div class = "nav-flex">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Austin Tenant's Council</a>
+          <a href="#">Powerley</a>
+          <a href="#">Google Community Leaders Program</a>
+          <a href="#">Coursework Projects</a>
+        </div>
+      </div>
+      <a href="gallery.html">Art Gallery</a>
+      <a href="contact.html" id="current-page">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+  </div>
 
 
     <div class="flex-container">
