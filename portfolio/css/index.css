@@ -34,16 +34,19 @@ footer{
 .nav-flex{
     display: flex;
     justify-content: center;
-    flex-grow:100; /* Let it fill the entire space horizontally */
+    flex-grow:100; 
     background-color:black;
 }
+
+/* Used/Referenced Code from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp for navigation bar */
+/* Changed some of the classes for my design purposes, i.e. color. I also had to add additional buttons in the navigation bar and also added it to a flex parent so I could more easily center and uniformally modify it. */
+/* Also had some issues with the referenced responsiveness code so I had to modify that accordingly to work with what I had. */
 
 .topnav {
     background-color: black;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -101,13 +104,11 @@ footer{
     background-color: #A0A0A0;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #555;
     color: white;
 }
 
-/* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
     color: black;
@@ -171,7 +172,6 @@ footer{
     text-align: left;
   }
 }
-
   .home-page{
     height: 28em;
     width: 100%;

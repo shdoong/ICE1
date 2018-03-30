@@ -34,7 +34,7 @@ footer{
 .nav-flex{
     display: flex;
     justify-content: center;
-    flex-grow:100; /* Let it fill the entire space horizontally */
+    flex-grow:100; 
     background-color:black;
 }
 
@@ -65,7 +65,6 @@ footer{
     float: left;
     overflow: hidden;
     background-color:black;
-
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -118,56 +117,72 @@ footer{
     display: block;
 }
 
-/* entire container, keeps perspective */
-.card-container {
-  cursor: pointer;
-  height: 150px;
-  border-radius: 10%;
-  perspective: 600;
-  position: relative;
-  width: 150px;
-  background-color:transparent;
-  margin:2em;
-}
-
-.card {
-  height: 100%;
-  position: absolute;
-  border-radius: 10%;
-  border: 3px solid white;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
+.home-page{
+  height: 30em;
   width: 100%;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-}
-.card .side {
-  backface-visibility: hidden;
-  border-radius: 6px;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-}
-.card .back {
+  background-image:url(../images/meonrock.JPG);
+  background-position: center;
+  background-size: 85em 66em;
+  background-repeat: no-repeat;
   display:flex;
   align-items:center;
-  background: #eaeaed;
-  color: black;
-  transform: rotateY(180deg);
+  justify-content: center;
 }
 
-ul{
-  background:transparent;
+/* Desktop View */
+
+/* Adapted code from card flip tutorials, ref: https://codepen.io/shayhowe/pen/Fvjnf*/
+/* Changed images and also edited the classes to fit my design purposes*/
+/* The codepen I looked at also just had one card flip, but I adapted it because I wanted four different ones that were either vertically or horizontally aligned. Furthermore, I had to change the back text of the card flip to account for the fact that I wanted to write more than three words.*/
+
+@media screen and (min-width: 900px) {
+
+  .card-container {
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    width: 150px;
+    background-color:transparent;
+    margin:2em;
+    display:inline-block;
+
+  }
+
+  .card {
+    height: 100%;
+    position: absolute;
+    border-radius: 10%;
+    border: 3px solid white;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+  .card .back {
+    display:flex;
+    align-items:center;
+    background: #eaeaed;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .parent{
+    background:transparent;
+  }
+
 }
 
-li{
-  background:transparent;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav {
       background-color: #333;
@@ -187,8 +202,7 @@ li{
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .topnav {
       background-color: #333;
       overflow: hidden;
@@ -220,17 +234,20 @@ li{
     text-align: left;
   }
 
+  .parent{
+    background:transparent;
+    text-align: center;
+
+  }
+
   .card-container {
-    cursor: pointer;
     height: 150px;
     border-radius: 10%;
-    perspective: 600;
     position: relative;
     width: 150px;
     background-color:transparent;
-    margin:2em;
-    display:block;
-    position:absolute;
+    margin:5em 2em 5em 2em;
+    display:inline-block;
   }
 
   .card {
@@ -238,20 +255,95 @@ li{
     position: absolute;
     border-radius: 10%;
     border: 3px solid white;
-    transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
     width: 100%;
+  }
+
+  #text_d{
+    background: rgba(255,255,255,0.8);   
+    margin-bottom:2em; 
+  }
+
+  .home-page{
+    height: 44em;
+    width: 100%;
+    background-image:url(../images/meonrock.JPG);
+    background-position: center;
+    background-size: 85em 66em;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content: center;
   }
 }
 
-.home-page{
-  height: 30em;
-  width: 100%;
-  background-image:url(../images/meonrock.JPG);
-  background-position: center;
-  background-size: 85em 66em;
-  background-repeat: no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content: center;
+@media screen and (max-width: 470px) {
+  .topnav {
+      background-color: #333;
+      overflow: hidden;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+    display:block;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .parent{
+    background:transparent;
+    text-align: center;
+
+  }
+
+  .card-container {
+    height: 150px;
+    border-radius: 10%;
+    position: relative;
+    width: 150px;
+    background-color:transparent;
+    margin:5em 2em 3em 2em;
+    display:inline-block;
+  }
+
+  .card {
+    height: 100%;
+    position: absolute;
+    border-radius: 10%;
+    border: 3px solid white;
+    width: 100%;
+  }
+
+  #text_d{
+    background: rgba(255,255,255,0.8);   
+  }
+
+  .home-page{
+    height: 80em;
+    width: 100%;
+    background-image:url(../images/meonrock.JPG);
+    background-position: center;
+    background-size: 85em 80em;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
 }

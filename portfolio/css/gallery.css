@@ -26,8 +26,11 @@ footer{
     background-color:#686868;
   }
 
+/* Referenced/Used code from: https://www.w3schools.com/css/css_image_gallery.asp */
+/* Modified some of the classes to fit my style needs. I also had many more photos I wanted to add and also a different responsiveness layouts than the example. */
 div.gallery {
     border: 1px solid #ccc;
+    background-color:#8CA38C;
 }
 
 div.gallery:hover {
@@ -43,24 +46,13 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    background-color:#8CA38C;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/*Full View*/
-
-@media only screen and (min-width:1000px) {
-
-.responsive {
-    padding: 2px 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-
-}
 
 #current-page{
   background-color: #4CAF50;
@@ -159,6 +151,7 @@ div.desc {
     display: block;
 }
 
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav {
@@ -212,3 +205,24 @@ div.desc {
     text-align: left;
   }
 }
+
+/*Tablet View*/
+
+@media only screen and (min-width:700px) {
+  .responsive {
+      padding: 2px 6px;
+      float: left;
+      width: 50%;
+    }
+  }
+
+/*Full View*/
+
+@media only screen and (min-width:1150px) {
+  .responsive {
+      padding: 2px 6px;
+      float: left;
+      width: 25%;
+  }
+}
+
