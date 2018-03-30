@@ -7,72 +7,59 @@
 
       <title>Susan Doong</title>
 
-      <link rel="stylesheet" type="text/css" href="css/contact.css">
+      <link rel="stylesheet" type="text/css" href="css/powerley.css">
        <script type = "text/javascript">
+
        function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
             x.className = "topnav";
-          }
-       }
-      
+        }
+      }
    </script>
   </head>
 
   <body>
+    <header>
     <img src="images/logo.png" alt="logo" height="80" width="80">
-    
+    </header>
+
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <div class="dropdown">
-          <button class="dropbtn">Projects 
+          <button class="dropbtn" id="current-page">Projects 
           </button>
           <div class="dropdown-content">
             <a href="austin.html">Austin Tenant's Council</a>
-            <a href="#">Powerley</a>
+            <a href="powerley.html" id="current-page">Powerley</a>
             <a href="#">Google Community Leaders Program</a>
             <a href="#">Coursework Projects</a>
           </div>
         </div>
         <a href="gallery.html">Art Gallery</a>
-        <a href="contact.html" id="current-page">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </nav>
 
-<!-- I created a form here but because I was unfamiliar with PHP to validate and send the form, I searched for an alternative and found formspree.io which grab the information from the form and send it to the email. This is what I used below. -->
-    <div class="flex-container">
-      <div class="flex-item b" align="center">
-        <div id = "message">
-
-          <h2>Contact Me</h2>
-            Feel free to leave me a message here, or connect with me on <a href = "https://www.linkedin.com/in/susan-doong18/"> LinkedIn!</a>
-
-            <div class="placeholder-100pct">&nbsp;</div>
-
-          </div>
-        <form action="https://formspree.io/shdoong@umich.edu" method="POST">
-          Name:
-            <input type="text" name="name" placeholder="Your name..">
-          <br><br>
-          Email:
-            <input type="text" name="email" placeholder="Your email..">
-          <br><br>
-          Message:<br>
-            <textarea name="message" placeholder="Leave a message!" style="height:170px"></textarea>
-          <br>
-          <input type="submit" value="Submit" name = "Send">
-          <input type="reset" value="Reset">
-        </form>
+  <div class = "page">
+    <div class = "blurb">
+      <div id="content">
+        <h2>Powerley Project</h2>
+        <p>This project was done for my analytics capstone project. I worked with three other students and an energy management platform. Our research project consisted of the visualization and analysis of home energy usages for the clients of a power management utility company. This was an exploratory analysis to see if trends can be observed to better advise homeowners in terms of efficient energy consumption. Our analysis was based in the coding language Python with usage of data visualization and analytics tools as well as the interactive analytics software Tableau. Our analysis shed light on temporal and external trends in energy usages such as higher consumption in hotter times of the year, higher usage in mornings and early evenings as well as the behavior of individual, within-home usage patterns. Take a look at our project poster below. </p>
       </div>
     </div>
-  <div class="placeholder-100pct">&nbsp;</div>
+    <ul class="flex-container">
+      <li class="flex-item b ">  </li>
+     
+    </ul>
+  </div>
 
   <footer>Susan Doong 2018 &copy;
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>

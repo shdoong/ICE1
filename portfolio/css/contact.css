@@ -18,6 +18,16 @@ footer{
   position:fixed;
   bottom:0;
   margin-left:-0.5em;
+
+}
+footer i{
+  background-color:black;
+  color:white;
+  padding:0.1em;
+}
+
+footer i:hover {
+  color: #4CAF50;
 }
 
 #current-page{
@@ -153,8 +163,6 @@ footer{
 
   form{
     background: rgba(255,255,255,0.6);    
-    -moz-border-radius: 2%;
-    -webkit-border-radius: 2%;
     border-radius: 2%;
     border-style:bold;
     padding: 2%;

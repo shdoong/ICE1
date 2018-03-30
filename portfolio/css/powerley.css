@@ -127,24 +127,6 @@ footer i:hover {
     display: block;
 }
 
-.flex-container {
-    display: flex;
-}
-
-.flex-item {
-  background: #AA00EE;
-  color: white;
-  margin-left:-10px;
-  border: 2px solid black;
-  padding: 5px;
-  width: 100%;
-  height: 150px;
-  line-height: 150px;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-  box-sizing:border-box;
-}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -200,36 +182,147 @@ footer i:hover {
   }
 }
 
-.home-page{
-  height: 66em;
+@media screen and (min-width: 850px) {
+
+  .page{
+    height: 47em;
+    width: 100%;
+  }
+
+  .flex-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:5px auto auto -10px;
+    height:550px;
+  }
+
+  .flex-item {
+    background: #AA00EE;
+    color: transparent;
+    margin-left:-10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    box-sizing:border-box;
+  }
+
+  .b{
+    width:70%;
+    background-image:url(../images/powerley_poster.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height:100%;
+    transition: all 0.5s ease;
+  }
+
+  .b:hover
+  {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .page{
+    height: 47em;
+    width: 100%;
+  }
+
+  .flex-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:5px auto auto -10px;
+    height:550px;
+  }
+
+  .flex-item {
+    background: #AA00EE;
+    color: transparent;
+    margin-left:-10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    box-sizing:border-box;
+  }
+
+  .b{
+    width:90%;
+    background-image:url(../images/powerley_poster.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height:80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .page{
+    height: 47em;
+    width: 100%;
+  }
+
+  .flex-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:5px auto auto -10px;
+    height:550px;
+  }
+
+  .flex-item {
+    background: #AA00EE;
+    color: transparent;
+    margin-left:-10px;
+    border: 2px solid black;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    box-sizing:border-box;
+  }
+
+  .b{
+    width:90%;
+    background-image:url(../images/powerley_poster.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height:70%;
+  }
+}
+
+.blurb{
+  background: rgba(255,255,255,0.4);    
+  border-radius: 2%;
+  border-style:bold;
+  padding: 0.25em;
   width: 100%;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-}
-
-h2{
-  background:transparent;
-  margin:0;
-  font-family: Palatino, Times;
-}
-
-p{
-  background:transparent;
-  text-align:left;
-  padding:0.25em;
+  margin-top:1em;
 }
 
 #content{
-  background: rgba(255,255,255,0.6);    
-  border-radius: 2%;
-  border-style:bold;
-  text-align:center;
-  font-family: Palatino, Times;
+  background:transparent;
 }
 
-iframe{
-  height:900px;
-  width:900px;
+h2, p{
+  background:transparent;
 }
+
 

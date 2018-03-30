@@ -20,6 +20,15 @@ footer{
   margin-left:-0.5em;
 
 }
+footer i{
+  background-color:black;
+  color:white;
+  padding:0.1em;
+}
+
+footer i:hover {
+  color: #4CAF50;
+}
 
 .current-page{
     font-weight: bold;
