@@ -29,17 +29,17 @@ footer i{
 }
 
 footer i:hover {
-  color: #91d7ee;
+  color: #4169E1;
 }
 
 #current-page{
-  background-color: #91d7ee;
+  background-color: #4169E1;
   color: white;
   font-weight:bold;
 }
 
 #current-page2{
-  background-color: #91d7ee;
+  background-color: #4169E1;
   color: white;
   font-weight:bold;
 }
