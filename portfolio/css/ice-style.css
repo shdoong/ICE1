@@ -1,5 +1,7 @@
 *{
   background-color:#9F9F9F;
+  font-family: 'Gafata', sans-serif, Palatino, Times;
+
 }
 
 img{
@@ -31,7 +33,7 @@ footer i:hover {
 }
 
 #current-page{
-  background-color: #4CAF50;
+  background-color: #91d7ee;
   color: white;
   font-weight:bold;
 }
@@ -267,7 +269,7 @@ footer i:hover {
     width: 100%;
   }
 
-  #text_d{
+  .text_d{
     background: rgba(255,255,255,0.8);   
     margin-bottom:2em; 
   }

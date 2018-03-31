@@ -1,5 +1,7 @@
 *{
   background-color:#9F9F9F;
+  font-family: 'Gafata', sans-serif, Palatino, Times;
+
 }
 
 img{
@@ -30,10 +32,11 @@ footer i:hover {
   color: #4CAF50;
 }
 
-.current-page{
-    font-weight: bold;
-    background-color:#686868;
-  }
+#current-page{
+  background-color: #91d7ee;
+  color: white;
+  font-weight:bold;
+}
 
 /* Referenced/Used code from: https://www.w3schools.com/css/css_image_gallery.asp */
 /* Modified some of the classes to fit my style needs. I also had many more photos I wanted to add and also a different responsiveness layouts than the example. */
@@ -62,12 +65,6 @@ div.desc {
     box-sizing: border-box;
 }
 
-
-#current-page{
-  background-color: #4CAF50;
-  color: white;
-  font-weight:bold;
-}
 
 .placeholder-100pct{
   background:transparent;

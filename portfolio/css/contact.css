@@ -1,5 +1,7 @@
 *{
 	background-color:#9F9F9F;
+  font-family: 'Gafata', sans-serif, Palatino, Times;
+
 }
 
 img{
@@ -31,7 +33,7 @@ footer i:hover {
 }
 
 #current-page{
-  background-color: #4CAF50;
+  background-color: #91d7ee;
   color: white;
   font-weight:bold;
 }
@@ -136,22 +138,31 @@ footer i:hover {
     flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
-
-  }
-
-  .flex-item {
-    color: black;
-    border: 2px solid black;
-    padding: 5px;
-    font-size: 1em;
-    box-sizing:border-box;
-    font-family: Palatino, Times;
     background-image:url(../images/contact.jpg);
     opacity: 0.8;
     background-repeat: no-repeat;
     background-size: 80em 40em;
     font-weight:bold;
+    align-content:center;
+    justify-content:center;
+
+  }
+
+  .flex-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:center;
+    justify-content:center;
+    color: black;
+    background:transparent;
+    padding: 5px;
+    font-size: 1em;
+    box-sizing:border-box;
+    font-family: Palatino, Times;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .b {
@@ -166,16 +177,18 @@ footer i:hover {
     border-radius: 2%;
     border-style:bold;
     padding: 2%;
-    width: 40%;
+    width: 55%;
     border: 1px solid black;
     margin-top:1em;
+    margin-left:auto;
+    margin-right:auto;
 
   }
 
   input[type="text"], textarea, select {
     background-color : white; 
     border: 1px solid #ccc; /* Gray border */
-
+    
   }
 
   input[type=submit]:hover {
@@ -195,7 +208,10 @@ footer i:hover {
     border-radius: 2%;
     -moz-border-radius: 2%;
     -webkit-border-radius: 2%;
-    width:40%;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+
   }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

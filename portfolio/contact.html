@@ -8,6 +8,8 @@
       <title>Susan Doong</title>
 
       <link rel="stylesheet" type="text/css" href="css/contact.css">
+      <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+
        <script type = "text/javascript">
        function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -34,9 +36,7 @@
           </button>
           <div class="dropdown-content">
             <a href="austin.html">Austin Tenant's Council</a>
-            <a href="#">Powerley</a>
-            <a href="#">Google Community Leaders Program</a>
-            <a href="#">Coursework Projects</a>
+            <a href="powerley.html">Powerley</a>
           </div>
         </div>
         <a href="gallery.html">Art Gallery</a>
@@ -48,15 +48,15 @@
 
 <!-- I created a form here but because I was unfamiliar with PHP to validate and send the form, I searched for an alternative and found formspree.io which grab the information from the form and send it to the email. This is what I used below. -->
     <div class="flex-container">
-      <div class="flex-item b" align="center">
+      <div class="flex-item">
         <div id = "message">
 
           <h2>Contact Me</h2>
-            Feel free to leave me a message here, or connect with me on <a href = "https://www.linkedin.com/in/susan-doong18/"> LinkedIn!</a>
+            Feel free to send me a message in the form below or connect with me on <a href = "https://www.linkedin.com/in/susan-doong18/"> LinkedIn!</a>
 
             <div class="placeholder-100pct">&nbsp;</div>
 
-          </div>
+        </div>
         <form action="https://formspree.io/shdoong@umich.edu" method="POST">
           Name:
             <input type="text" name="name" placeholder="Your name..">
@@ -65,7 +65,7 @@
             <input type="text" name="email" placeholder="Your email..">
           <br><br>
           Message:<br>
-            <textarea name="message" placeholder="Leave a message!" style="height:170px"></textarea>
+            <textarea name="message" placeholder="Leave a message!" style="height:170px;"></textarea>
           <br>
           <input type="submit" value="Submit" name = "Send">
           <input type="reset" value="Reset">

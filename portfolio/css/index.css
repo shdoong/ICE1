@@ -1,5 +1,6 @@
 *{
 	background-color:#9F9F9F;
+  font-family: 'Gafata', sans-serif, Palatino, Times;
 }
 
 img{
@@ -32,7 +33,7 @@ footer i:hover {
 
 
 #current-page{
-  background-color: #4CAF50;
+  background-color: #91d7ee;
   color: white;
   font-weight:bold;
 }
@@ -42,15 +43,15 @@ footer i:hover {
 }
 
 .nav-flex{
-    display: flex;
-    justify-content: center;
-    flex-grow:100; 
-    background-color:black;
+  display: flex;
+  justify-content: center;
+  flex-grow:100; 
+  background-color:black;
 }
 
 /* Used/Referenced Code from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp for navigation bar */
 /* Changed some of the classes for my design purposes, i.e. color. I also had to add additional buttons in the navigation bar and also added it to a flex parent so I could more easily center and uniformally modify it. */
-/* Also had some issues with the referenced responsiveness code so I had to modify that accordingly to work with what I had. */
+/* Also had some issues with the referenced responsiveness code so I had to modify that accordingly to work with my media queries. */
 
 .topnav {
     background-color: black;
@@ -66,6 +67,8 @@ footer i:hover {
     padding: 10px 16px;
     text-decoration: none;
     font-size: 16px;
+
+
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -89,7 +92,6 @@ footer i:hover {
     color: white;
     padding: 10px 16px;
     background-color: inherit;
-    font-family: inherit;
     margin: 0;
 }
 
@@ -192,20 +194,19 @@ footer i:hover {
     justify-content: center;
   }
 
-  h2{
+  h1{
     background:transparent;
     margin:0;
-    font-family: Palatino, Times;
   }
 
   p{
     background:transparent;
+    font-size:1.3em;
   }
 
   #content{
     background:transparent;
     text-align:center;
-    font-family: Palatino, Times;
   }
 
 
