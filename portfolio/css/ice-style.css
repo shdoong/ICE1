@@ -11,6 +11,10 @@ img{
     text-align:center;
 }
 
+.placeholder-100pct{
+  background:transparent;
+}
+
 footer{
   margin-top: 2px;
   background:black;
@@ -48,6 +52,11 @@ footer i:hover {
     flex-grow:100; 
     background-color:black;
 }
+
+/* Used/Referenced Code from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp for navigation bar */
+/* Changed some of the classes for my design purposes, i.e. color. I also had to add additional buttons in the navigation bar and also added it to a flex parent so I could more easily center and uniformally modify it. */
+/* Also had some issues with the referenced responsiveness code so I had to modify that accordingly to work with my media queries. */
+
 
 .topnav {
     background-color: black;
@@ -112,19 +121,19 @@ footer i:hover {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn, .topnav a:focus, .dropdown:focus .dropbtn {
     background-color: #555;
     color: white;
 }
 
 /* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content a:focus {
     background-color: #ddd;
     color: black;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
     display: block;
 }
 
@@ -169,7 +178,7 @@ footer i:hover {
     width: 100%;
   }
 
-  .card:hover {
+  .card:hover, .card:focus {
     transform: rotateY(180deg);
   }
   .card .side {
@@ -179,6 +188,7 @@ footer i:hover {
     position: absolute;
     overflow: hidden;
     width: 100%;
+
   }
   .card .back {
     display:flex;

@@ -31,19 +31,18 @@
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="about.html" id="current-page">About</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects 
-          </button>
+        <a href="index.html" tabindex = "1">Home</a>
+        <a href="about.html" id="current-page" tabindex = "2">About</a>
+        <div class="dropdown" tabindex = "3">
+          <button class="dropbtn">Projects </button>
           <div class="dropdown-content">
-            <a href="austin.html">Austin Tenant's Council</a>
-            <a href="powerley.html">Powerley</a>
+            <a href="austin.html" tabindex = "4">Austin Tenant's Council</a>
+            <a href="powerley.html" tabindex = "5">Powerley</a>
           </div>
         </div>
-        <a href="gallery.html">Art Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="gallery.html" tabindex = "6">Art Gallery</a>
+        <a href="contact.html" tabindex = "7">Contact</a>
+        <a href="javascript:void(0);" class="icon" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </nav>
@@ -51,14 +50,14 @@
 
       <div class = "parent">
         <div class="card-container">
-          <div class="card" id = "one">
+          <div class="card" id = "one" tabindex = "8">
             <div class="side"><img src="images/michigan.jpg" alt="State of Michigan picture" height="150" width="150"></div>
             <div class="side back text_d">I am a full-fledged Michigander, born and raised in the metro Detroit area.</div>
           </div>
         </div>
         
         <div class="card-container">
-          <div class="card" id = "two">
+          <div class="card" id = "two" tabindex = "9">
             <div class="side"><img src="images/uofm.png" alt="University of Michigan Logo" height="150" width="150"></div>
             <div class="side back text_d">
               I am a current senior at the University of Michigan studying business and information analytics.
@@ -67,7 +66,7 @@
         </div>
 
         <div class="card-container">
-          <div class="card" id = "three">
+          <div class="card" id = "three" tabindex = "10">
             <div class="side"><img src="images/skills.jpg" alt="Skills" height="150" width="150"></div>
             <div class="side back text_d">
               I am proficient in Python, R, HTML, CSS, and VBA.
@@ -76,7 +75,7 @@
         </div>
 
         <div class="card-container">
-          <div class="card" id = "four">
+          <div class="card" id = "four" tabindex = "11">
             <div class="side"><img src="images/interest.JPG" alt="Paint Photo" height="150" width="150"></div>
             <div class="side back text_d"> I enjoy playing the piano, skating, and painting. Check out my Art Gallery for some of my artwork!</div>
           </div>

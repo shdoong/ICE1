@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
       <title>Susan Doong</title>
+      <link rel="stylesheet" type="text/css" href="css/ice-style.css">
 
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
@@ -32,19 +33,18 @@
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
-        <a href="index.html" id="current-page">Home</a>
-        <a href="about.html">About</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects 
-          </button>
-          <div class="dropdown-content">
+        <a href="index.html" id="current-page" tabindex = "1">Home</a>
+        <a href="about.html" tabindex = "2">About</a>
+        <div class="dropdown" tabindex = "3">
+          <button class="dropbtn">Projects </button>
+          <div class="dropdown-content" tabindex = "4">
             <a href="austin.html">Austin Tenant's Council</a>
-            <a href="powerley.html">Powerley</a>
+            <a href="powerley.html" tabindex = "5">Powerley</a>
           </div>
         </div>
-        <a href="gallery.html">Art Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="gallery.html" tabindex = "6">Art Gallery</a>
+        <a href="contact.html" tabindex = "7">Contact</a>
+        <a href="javascript:void(0);" class="icon" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </nav>
