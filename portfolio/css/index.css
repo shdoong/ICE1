@@ -1,5 +1,6 @@
 
 .home-page{
+  height:50vw;
   width: 100%;
   background-image:url(../images/home.jpg);
   background-size:cover;

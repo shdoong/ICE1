@@ -193,6 +193,7 @@ footer i:hover {
   .card .back {
     display:flex;
     align-items:center;
+    background: #eaeaed;
     color: black;
     transform: rotateY(180deg);
   }
@@ -284,11 +285,11 @@ footer i:hover {
   }
 
   .home-page{
-    height: 44em;
+    height: 100%;
     width: 100%;
     background-image:url(../images/meonrock.JPG);
     background-position: center;
-    background-size: 85em 66em;
+    background-size: cover;
     background-repeat: no-repeat;
     display:flex;
     align-items:center;
