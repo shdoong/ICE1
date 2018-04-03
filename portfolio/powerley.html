@@ -9,10 +9,11 @@
       <link rel="stylesheet" type="text/css" href="css/ice-style.css">
       <link rel="stylesheet" type="text/css" href="css/projects.css">
       <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-       <script type = "text/javascript">
+      <script type = "text/javascript">
 
-       function myFunction() {
+     function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
@@ -20,7 +21,33 @@
             x.className = "topnav";
         }
       }
+
+    $(document).ready(function(){
+      $(".dropdown-content").hide()
+      $('.nav-link').on('keyup', function(e) {
+        var $this = $(this);
+        if (e.keyCode == 9){
+          if (e.keyCode == 9 && $this.next(".dropdown-content").length) {
+            console.log("downkey pressed");
+            console.log($this);
+            $this.next(".dropdown-content").show();
+          }
+        }
+      });
+
+
+     $('.dropdown').on('mouseover', function(e) {
+        $(this).children(".dropdown-content").show()    
+      });
+
+     $('.dropdown').on('mouseleave', function(e) {
+        $(this).children(".dropdown-content").hide()    
+      });
+
+    })
+
    </script>
+
   </head>
 
   <body>
@@ -28,21 +55,22 @@
     <img src="images/logo.png" alt="site logo" height="80" width="80">
     </header>
 
+<!-- Try to see if you can show the sub menu on initial load and use tab -->
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
-        <a href="index.html" tabindex = "1">Home</a>
-        <a href="about.html" tabindex = "2">About</a>
-        <div class="dropdown" tabindex = "3">
-          <button class="dropbtn" id="current-page">Projects </button>
+        <a class = "nav-link" href="index.html" id="current-page" tabindex = "1">Home</a>
+        <a class = "nav-link" href="about.html" tabindex = "2">About</a>
+        <div class="dropdown" tabindex = "3" role = "menu">
+          <button class="dropbtn nav-link" tabindex = "4" href = "#" role = "menu">Projects </button>
           <div class="dropdown-content">
-            <a href="austin.html" tabindex = "4">Austin Tenant's Council</a>
-            <a href="powerley.html" tabindex = "5" id="current-page2">Powerley</a>
+            <a class = "submenu nav-link" href="austin.html" role = "menuitem" tabindex = "5">Austin Tenant's Council</a>
+            <a class = "submenu nav-link" href="powerley.html" role = "menuitem" tabindex = "6">Powerley</a>
           </div>
         </div>
-        <a href="gallery.html" tabindex = "6">Art Gallery</a>
-        <a href="contact.html" tabindex = "7">Contact</a>
-        <a href="javascript:void(0);" class="icon" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
+        <a class = "nav-link" href="gallery.html" tabindex = "7">Art Gallery</a>
+        <a class = "nav-link" href="contact.html" tabindex = "8">Contact</a>
+        <a class = "nav-link icon" href="javascript:void(0);" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </nav>
