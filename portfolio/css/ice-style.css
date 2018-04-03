@@ -193,7 +193,6 @@ footer i:hover {
   .card .back {
     display:flex;
     align-items:center;
-    background: #eaeaed;
     color: black;
     transform: rotateY(180deg);
   }
