@@ -180,6 +180,11 @@ footer i:hover {
   .card:hover, .card:focus {
     transform: rotateY(180deg);
   }
+
+  .card:hover .back{
+    z-index:100;
+  }
+
   .card .side {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
