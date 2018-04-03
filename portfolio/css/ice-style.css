@@ -285,11 +285,11 @@ footer i:hover {
   }
 
   .home-page{
-    height: 100%;
     width: 100%;
     background-image:url(../images/meonrock.JPG);
     background-position: center;
     background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display:flex;
     align-items:center;
