@@ -1,7 +1,9 @@
-*{
-  background-color:#9F9F9F;
+html{
   font-family: 'Gafata', sans-serif, Palatino, Times;
+}
 
+body{  
+  background-color:#9F9F9F;
 }
 
 img{
@@ -101,7 +103,7 @@ footer i:hover {
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -205,6 +207,10 @@ footer i:hover {
 
   .parent{
     background:transparent;
+  }
+
+  .icon{
+    display:none;
   }
 
 }

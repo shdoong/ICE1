@@ -28,16 +28,31 @@
           }
         }
 
-    // $(document).ready(function(){
-    //       var tabindex = 1;
-    //       $(".dropdown").on('focus mouseover', function(){
-    //           if (this.type != "hidden") {
-    //             var $input = $(this);
-    //             $input.attr("tabindex", tabindex);
-    //             tabindex++;
-    //           }
-    //       })
-    //     })
+
+    $(document).ready(function(){
+      $(".dropdown-content").hide()
+      $('.nav-link').on('keyup', function(e) {
+        var $this = $(this);
+        if (e.keyCode == 9){
+          if (e.keyCode == 9 && $this.next(".dropdown-content").length) {
+            console.log("downkey pressed");
+            console.log($this);
+            $this.next(".dropdown-content").show();
+          }
+        }
+      });
+
+
+
+     $('.dropdown').on('mouseover', function(e) {
+        $(this).children(".dropdown-content").show()    
+      });
+
+     $('.dropdown').on('mouseleave', function(e) {
+        $(this).children(".dropdown-content").hide()    
+      });
+
+    })
 
    </script>
 
@@ -52,18 +67,18 @@
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
-        <a href="index.html" id="current-page" tabindex = "1">Home</a>
-        <a href="about.html" tabindex = "1">About</a>
-        <div class="dropdown" tabindex = "1" role = "menu">
-          <button class="dropbtn">Projects </button>
+        <a class = "nav-link" href="index.html" id="current-page" tabindex = "1">Home</a>
+        <a class = "nav-link" href="about.html" tabindex = "2">About</a>
+        <div class="dropdown" tabindex = "3" role = "menu">
+          <button class="dropbtn nav-link" tabindex = "4" href = "#" role = "menu">Projects </button>
           <div class="dropdown-content">
-            <a href="austin.html" role = "menuitem" tabindex = "-1" >Austin Tenant's Council</a>
-            <a href="powerley.html" role = "menuitem" tabindex = "-1">Powerley</a>
+            <a class = "submenu nav-link" href="austin.html" role = "menuitem" tabindex = "5">Austin Tenant's Council</a>
+            <a class = "submenu nav-link" href="powerley.html" role = "menuitem" tabindex = "6">Powerley</a>
           </div>
         </div>
-        <a href="gallery.html" tabindex = "1">Art Gallery</a>
-        <a href="contact.html" tabindex = "1">Contact</a>
-        <a href="javascript:void(0);" class="icon" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
+        <a class = "nav-link" href="gallery.html" tabindex = "7">Art Gallery</a>
+        <a class = "nav-link" href="contact.html" tabindex = "8">Contact</a>
+        <a class = "nav-link icon" href="javascript:void(0);" onfocus = "myFunction()" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </nav>
