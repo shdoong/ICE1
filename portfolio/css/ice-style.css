@@ -137,18 +137,6 @@ footer i:hover {
     display: block;
 }
 
-.home-page{
-  height: 30em;
-  width: 100%;
-  background-image:url(../images/meonrock.JPG);
-  background-position: center;
-  background-size: 85em 66em;
-  background-repeat: no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-}
-
 /* Desktop View */
 
 /* Adapted code from card flip tutorials, ref: https://codepen.io/shayhowe/pen/Fvjnf*/
@@ -156,6 +144,17 @@ footer i:hover {
 /* The codepen I looked at also just had one card flip, but I adapted it because I wanted four different ones that were either vertically or horizontally aligned. Furthermore, I had to change the back text of the card flip to account for the fact that I wanted to write more than three words.*/
 
 @media screen and (min-width: 900px) {
+  .home-page{
+    height: 30em;
+    width: 100%;
+    background-image:url(../images/meonrock.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
 
   .card-container {
     height: 150px;
@@ -182,6 +181,7 @@ footer i:hover {
     transform: rotateY(180deg);
   }
   .card .side {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 6px;
     height: 100%;
@@ -223,6 +223,7 @@ footer i:hover {
   }
 }
 
+/*Less than desktop view*/
 @media screen and (max-width: 900px) {
   .topnav {
       background-color: #333;
@@ -285,6 +286,7 @@ footer i:hover {
   }
 
   .home-page{
+    height:50em;
     width: 100%;
     background-image:url(../images/meonrock.JPG);
     background-position: center;
@@ -353,7 +355,7 @@ footer i:hover {
     width: 100%;
   }
 
-  #text_d{
+  .text_d{
     background: rgba(255,255,255,0.8);   
   }
 

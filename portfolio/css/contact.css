@@ -45,10 +45,11 @@ label{
     flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
+    width:100%;
     background-image:url(../images/contact.jpg);
     opacity: 0.8;
     background-repeat: no-repeat;
-    background-size: 80em 40em;
+    background-size: cover;
     font-weight:bold;
     align-content:center;
     justify-content:center;
@@ -177,7 +178,9 @@ label{
     background-image:url(../images/contact.jpg);
     opacity: 0.8;
     background-repeat: no-repeat;
-    background-size: 80em 40em;
+    background-size: cover;
+    height:100%;
+    width:100%;
     font-weight:bold;
   }
 
