@@ -1,9 +1,7 @@
 
 .home-page{
-  height: 100vw;
   width: 100%;
   background-image:url(../images/home.jpg);
-  background-size: 80em 40em;
   display:flex;
   align-items:center;
   justify-content: center;
