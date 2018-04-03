@@ -10,10 +10,15 @@
 
       <link rel="stylesheet" type="text/css" href="css/index.css">
       <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
       <script type = "text/javascript">
+
 
 // Used/Referenced Code from: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp for navigation bar
 // Had to modify the code to fit my needs. See CSS file comments for more details.
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
        function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
@@ -21,8 +26,21 @@
           } else {
               x.className = "topnav";
           }
-      }
+        }
+
+    // $(document).ready(function(){
+    //       var tabindex = 1;
+    //       $(".dropdown").on('focus mouseover', function(){
+    //           if (this.type != "hidden") {
+    //             var $input = $(this);
+    //             $input.attr("tabindex", tabindex);
+    //             tabindex++;
+    //           }
+    //       })
+    //     })
+
    </script>
+
   </head>
 
   <body>
@@ -30,6 +48,7 @@
     <img src="images/logo.png" alt="site logo" height="80" width="80">
     </header>
 
+<!-- Try to see if you can show the sub menu on initial load and use tab -->
   <nav>
     <div class = "nav-flex">
       <div class="topnav" id="myTopnav">
@@ -37,9 +56,9 @@
         <a href="about.html" tabindex = "2">About</a>
         <div class="dropdown" tabindex = "3">
           <button class="dropbtn">Projects </button>
-          <div class="dropdown-content" tabindex = "4">
-            <a href="austin.html">Austin Tenant's Council</a>
-            <a href="powerley.html" tabindex = "5">Powerley</a>
+          <div class="dropdown-content">
+            <a href="austin.html" >Austin Tenant's Council</a>
+            <a href="powerley.html">Powerley</a>
           </div>
         </div>
         <a href="gallery.html" tabindex = "6">Art Gallery</a>
