@@ -1,7 +1,7 @@
+
 * {
     box-sizing: border-box;
 }
-
 
 /* Referenced/Used code from: https://www.w3schools.com/css/css_image_gallery.asp */
 /* Modified some of the classes to fit my style needs. I also had many more photos I wanted to add and also a different responsiveness layouts than the example. */
@@ -28,7 +28,7 @@ div.desc {
 
 /*Mobile View*/
 @media only screen and (min-width:0px) {
-  .responsive {
+  .responsive2 {
       padding: 2px 6px;
       float: left;
       width: 100%;
@@ -37,8 +37,8 @@ div.desc {
 
 /*Tablet View*/
 
-@media only screen and (min-width:700px) {
-  .responsive {
+@media only screen and (min-width:900px) {
+  .responsive2 {
       padding: 2px 6px;
       float: left;
       width: 50%;
@@ -48,7 +48,7 @@ div.desc {
 /*Full View*/
 
 @media only screen and (min-width:1150px) {
-  .responsive {
+  .responsive2 {
       padding: 2px 6px;
       float: left;
       width: 25%;
