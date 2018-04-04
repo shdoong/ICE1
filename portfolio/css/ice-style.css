@@ -320,9 +320,10 @@ footer i:hover {
     position: relative;
   }
   .topnav.responsive a.icon {
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
+    text-align:center;
   }
   .topnav.responsive a {
     float: none;
