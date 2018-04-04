@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 
 /* Referenced/Used code from: https://www.w3schools.com/css/css_image_gallery.asp */
@@ -23,12 +26,14 @@ div.desc {
     background-color:#8CA38C;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-
-
+/*Mobile View*/
+@media only screen and (min-width:0px) {
+  .responsive {
+      padding: 2px 6px;
+      float: left;
+      width: 100%;
+    }
+  }
 
 /*Tablet View*/
 
