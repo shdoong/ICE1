@@ -92,6 +92,20 @@ img{
     height:300%;
   }
 
+  iframe{
+    display:none;
+  }
+
+  .link-to-site{
+    display:block;
+    background:transparent;
+  }
+
+  .sitelink{
+    background:transparent;
+    margin:0.5em;
+    font-size:1em;
+  }
 }
 
 @media screen and (min-width: 690px){
@@ -153,6 +167,17 @@ img{
     width:100%;
     height:300%;
   }
+
+  iframe{
+    background:transparent;
+    width: 100%; 
+    height: 500px; 
+  }
+
+  .link-to-site{
+    display:none;
+  }
+
   
 }
 
@@ -226,12 +251,6 @@ p{
   font-weight:normal;
   line-height: normal;
   font-size:1.1em;
-}
-
-iframe{
-  background:transparent;
-  width: 100%; 
-  height: 500px; 
 }
 
 
