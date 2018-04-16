@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Susan Doong</title>
+      <link rel="stylesheet" type="text/css" href="css/ice-style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <script type = "text/javascript">
+
+      $(document).ready(function(){
+        $("#show").click(function(){
+          $('#firstpic').css({"display":"block"}); 
+        });
+        $("#hide").click(function(){
+          $('#firstpic').css({"display":"none"}); 
+        });
+      });
+
+   </script>
+
+  </head>
+
+  <body>
+    <header>
+    <h1>Susan Doong</h1>
+    </header>
+    <div class="flex-container">
+        <div class="flex-item a">
+          <img src = "images/UMSI-logo.jpg" alt = "UMSI-logo">
+        </div>
+        <div id = "firstpic" class="flex-item b" style = "display:block">
+          <img id = "picid" src = "images/examPic.JPG" alt = "Exam Pic">
+        </div>
+    </div>
+
+    <button id = "show">Show Image</button>
+    <button id = "hide">Hide Image</button>
+
+  </body>
+
+</html>

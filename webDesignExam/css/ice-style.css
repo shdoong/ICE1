@@ -1,0 +1,48 @@
+body{
+  background-image:url(../images/weather.png);
+}
+
+.flex-container {
+  width:100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.flex-item {
+  border-style: solid;
+  border-color:blue;
+  border-width:5px;
+  width: 50%;
+  font-weight: bold;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  box-sizing:border-box;
+  padding:5%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+header{
+  width:100%;
+}
+
+button{
+  margin-bottom: 1em;
+}
+
+.a{
+  width:50%;
+  margin:0 auto;
+}
+
+.b{
+  width:50%;
+}
+
